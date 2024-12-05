@@ -1,0 +1,79 @@
+.card, header, main, .card_speedInfo, .card_footer {
+  border: 1.5px solid rgb(118, 126, 130);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 4fr 1fr 1.5fr;
+}
+
+header {
+  font-weight: 500;
+  color: #181717;
+  padding-top: 5%;
+}
+
+.card_speedInfo {
+  background-color: rgb(194, 233, 230);
+}
+
+.card_footer {
+  background-color: rgb(200, 205, 209);
+}
+
+.blue {
+  background-color: rgb(85, 80, 209);
+}
+
+.green {
+  background-color: rgb(12, 190, 86);
+}
+
+.red {
+  background-color: rgb(179, 48, 48);
+}
+
+.black {
+  background-color: rgba(69, 57, 57, 0.874);
+}
+
+.bigger_card {
+  width: 230px;
+  height: 330px;
+  margin-top: -2.5vh;
+  box-shadow: 5px 5px 5px black;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rub {
+ align-self: flex-start;
+ margin-top: 2vh;
+}
+
+.price {
+  align-self: center;
+  font-size: 3.7rem;
+}
+
+.month {
+  align-self: flex-end;
+  margin-bottom: 2vh;
+}
+
+.rub, .header_price, .month, .price {
+  color: #f3ecece0;
+}
+
+.header_price {
+  font-size: 1.25rem;
+}
