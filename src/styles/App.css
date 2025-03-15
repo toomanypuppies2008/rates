@@ -1,11 +1,144 @@
 #root {
   width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.card,
+header,
+main,
+.card_speedInfo,
+.card_footer {
+  border: 1.5px solid rgb(118, 126, 130);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 4fr 1fr 1.5fr;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px hsl(160, 54%, 34%);
+  border-color: #319272;
+  cursor: pointer;
+}
+
+.card header {
+  font-weight: 500;
+  color: #181717;
+  padding-top: 5%;
+}
+
+.card_speedInfo {
+  background-color: rgb(194, 233, 230);
+}
+
+.card_footer {
+  background-color: rgb(200, 205, 209);
+}
+
+.blue {
+  background-color: rgb(85, 80, 209);
+}
+
+.green {
+  background-color: rgb(12, 190, 86);
+}
+
+.red {
+  background-color: rgb(179, 48, 48);
+}
+
+.black {
+  background-color: rgba(69, 57, 57, 0.874);
+}
+
+.bigger_card {
+  width: 230px;
+  height: 330px;
+  margin-top: -2.5vh;
+  box-shadow: 5px 5px 5px black;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rub {
+  align-self: flex-start;
+  margin-top: 2vh;
+}
+
+.price {
+  align-self: center;
+  font-size: 3.7rem;
+}
+
+.month {
+  align-self: flex-end;
+  margin-bottom: 2vh;
+}
+
+.rub,
+.header_price,
+.month,
+.price {
+  color: #f3ecece0;
+}
+
+.header_price {
+  font-size: 1.25rem;
+}
+
+.rates-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: center;
-  margin-top: 20vh;
+  margin-top: 8vh;
 }
 
+.basket {
+  border: 3px solid #0a2675;
+  width: 30vw;
+  height: 30vh;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.basket .basket-card > * {
+  width: 190px;
+  height: 170px;
+  font-size: 0.8em;
+}
+
+.basket .basket-card > *:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.basket .basket-card .bigger_card {
+  box-shadow: none;
+  margin-top: 0;
+}
+
+.basket p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a2675;
+}
